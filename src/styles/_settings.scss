@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Sansita&family=Sarala:wght@400;700&display=swap');
+
+$font-1:'Oleo Script', sans-serif;
+$font-2: 'Sansita', sans-serif;
+$font-3: 'Sarala', sans-serif;
+
+$color-1: #F5F5F5;
+$color-2: #011627;
+$color-3: #07A0C3;
+$color-4: #FF9F1C;
+$color-5: #DD1C1A;
+
+@mixin header {
+    font-family: $font-1;
+    font-size: 4.5rem;
+    color: $color-2;
+}
+
+@mixin title-1 {
+    font-family: $font-2;
+    font-size: 3rem;
+    color: $color-2;
+}
+
+@mixin title-2 {
+    font-family: $font-3;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-2;
+}
+
+@mixin body-highlight($size) {
+    font-family: $font-3;
+    font-size: $size;
+    font-weight: bold;
+    color: $color-5;
+}
+
+body{
+    background-color: $color-1;
+    font-family: $font-3;
+    font-size: 1.5rem;
+    color: $color-2;
+}
+
+h1{
+    @include header;
+}
+
+h2{
+    @include title-1;
+}
+
+h3{
+    @include title-2;
+}
+
+strong{
+    @include body-highlight(1rem);
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: $color-2;
+}
+
+button{
+    @include body-highlight (1.5rem);
+    color: $color-1;
+    background-color: $color-5;
+    border: none;
+    border-radius: 8px;
+    
+    margin-top: 24px;
+    padding: 8px 48px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+button:hover{
+    background-color: $color-1;
+    color : $color-5;
+    border: 2px solid #DD1C1A;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+button:left{
+    transition: 0.3s;
+}

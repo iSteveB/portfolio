@@ -1,0 +1,48 @@
+.home {
+  h1 {
+    color: $color-4;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 16px 0;
+  }
+
+  .presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 300px;
+      height: 300px;
+      margin: 24px auto 16px auto;
+    }
+  }
+
+  .welcome {
+    h2 {
+      position: relative;
+      margin: 72px 0;
+      text-align: center;
+
+      &::after {
+        content: "";
+        width: 12%;
+        height: 8px;
+        background: $color-4;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 5px;
+      }
+    }
+
+    p {
+      width: 40%;
+      margin: 56px;
+    }
+  }
+}

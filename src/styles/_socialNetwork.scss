@@ -1,0 +1,26 @@
+.social-network{
+    
+    img{
+        height: 40px;
+        width: 40px;
+        margin: 16px;
+    }
+
+    img:hover{
+        transform: scale(1.5);
+        transition: 0.3s;
+    }
+
+    a:first-child img{
+        filter: invert(87%) sepia(38%) saturate(6547%) hue-rotate(344deg) brightness(102%) contrast(101%);
+    }
+
+    a:nth-child(2) img{
+        filter: invert(23%) sepia(45%) saturate(4615%) hue-rotate(346deg) brightness(88%) contrast(110%);
+    }
+
+    a:last-child img{
+        filter: invert(47%) sepia(89%) saturate(576%) hue-rotate(147deg) brightness(90%) contrast(95%);
+    }
+
+}
