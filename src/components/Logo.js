@@ -1,9 +1,10 @@
-import logo from "../assets/images/logo.svg"
 const Logo = () => {
     return (
-        <div>
-            <img src={logo} alt="Logo iSB" width="73" height="73"/>
-        </div>
+    <div class="logo">
+        <div class="yellowCircle"></div>
+        <div class="blueCircle"> <p class="typing">&lt; iSB /&gt;</p></div>
+        <div class="redCircle"></div>
+    </div>
     );
 };
 

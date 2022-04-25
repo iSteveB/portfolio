@@ -1,0 +1,84 @@
+.logo {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oleo Script", cursive;
+  color: white;
+  margin: 32px;
+
+  @keyframes circleRed {
+    0% {
+      transform: translate(-50px, 50px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  @keyframes circleYellow {
+    0% {
+      transform: translate(50px, -50px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  @keyframes circleBlue {
+    0% {
+      transform: scale(0) rotate(360deg);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .redCircle,
+  .yellowCircle,
+  .blueCircle {
+    overflow: hidden;
+    min-width: 350px;
+    min-height: 350px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .redCircle,
+  .yellowCircle {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .redCircle {
+    background-color: #dd1c1a;
+    left: -155px;
+    top: -15px;
+    animation: circleRed 2s linear forwards;
+  }
+
+  .yellowCircle {
+    background-color: #ff9f1c;
+    left: 155px;
+    top: 15px;
+    animation: circleYellow 2s linear forwards;
+  }
+
+  .blueCircle {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: #07a0c3;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    animation: circleBlue 1s;
+  }
+
+  p {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 5rem;
+    font-weight: 400;
+    z-index: 2;
+  }
+}

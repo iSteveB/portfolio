@@ -1,6 +1,7 @@
 import React from "react";
 import DownloadCV from "../components/DownloadCV";
 import Header from "../components/Header";
+import Sphere from "../components/Sphere";
 import Logo from "../components/Logo";
 
 const Accueil = () => {
@@ -18,22 +19,35 @@ const Accueil = () => {
       <section className="welcome">
         <h2>Bonjour !</h2>
         <div className="introduction">
-          <p>
-            Bienvenue sur mon portfolio ! Je suis Steve, étudiant chez
-            OpenClassrooms où je prépare un titre RNCP Bac +2 développeur web.
-            Les langages que j’utilise sont juste ici <br /> J’aime le code
-            propre, simple et efficace et cherche donc à apprendre dans ce sens.
-          </p>
-          <div className="languages">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+          <div>
+            <p>
+              Bienvenue sur mon portfolio !
+              <br />
+              Je suis Steve, étudiant chez OpenClassrooms où je prépare un titre
+              RNCP Bac +2 <strong>développeur web</strong>.
+            </p>
+            <p>
+              En ce moment, je m'amuse avec React et je continue d'apprendre de
+              nouvelles choses au travers de ma veille techno. J’aime le code
+              propre, simple et efficace et cherche donc à apprendre dans ce
+              sens.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Incidunt, praesentium ut? Animi rerum sapiente, molestias, ullam
+              illum pariatur quam ipsa obcaecati reiciendis molestiae beatae rem
+              magni eaque quibusdam corrupti corporis?
+            </p>
+              <a href="https://www.google.fr/">
+                En savoir plus
+              </a>
           </div>
+
+          <Sphere />
         </div>
       </section>
+
+      
     </div>
   );
 };

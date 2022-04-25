@@ -1,11 +1,10 @@
 .home {
+
+  height: 100vh;
+
   h1 {
     color: $color-4;
     margin: 0;
-  }
-
-  h2 {
-    margin: 16px 0;
   }
 
   .presentation {
@@ -19,9 +18,16 @@
       height: 300px;
       margin: 24px auto 16px auto;
     }
+
+    h2 {
+      margin: 16px 0;
+    }
   }
 
   .welcome {
+
+    height: 100vh;
+
     h2 {
       position: relative;
       margin: 72px 0;
@@ -40,9 +46,26 @@
       }
     }
 
+    
+  }
+
+  .introduction {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    
     p {
-      width: 40%;
-      margin: 56px;
+      width: 75%;
+      margin: 16px 56px;
+    }
+
+    img {
+      position: relative;
+      top: 16px;
+    }
+
+    a {
+      margin-left: 56px;
     }
   }
 }

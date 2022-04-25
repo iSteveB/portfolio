@@ -4,11 +4,11 @@
         height: 40px;
         width: 40px;
         margin: 16px;
+        transition: all 250ms;
     }
 
     img:hover{
         transform: scale(1.5);
-        transition: 0.3s;
     }
 
     a:first-child img{
