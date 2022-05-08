@@ -1,0 +1,56 @@
+.contact-form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    input, textarea{
+        padding: 16px 8px;
+        border-radius: 8px;
+        border: 1px solid $color-3;
+        font-family: $font-3;
+        
+
+        &::placeholder{
+            color: $color-2
+        }
+    }
+    
+    form{
+        width: 50%;
+        display: grid;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+        grid-template-areas: 
+        "a a b b"
+        "c c c c"
+        "d d d d"
+        "d d d d"
+        "e e e e";
+    }
+
+    input[name='last-name']{
+        grid-area: a;
+    }
+
+    input[name='first-name']{
+        grid-area: b;
+    }
+
+    input[name='email']{
+        grid-area: c;
+    }
+
+    textarea{
+        grid-area: d;
+        resize: none;
+    }
+
+    button{
+        grid-column: 2/4;
+    }
+    
+}

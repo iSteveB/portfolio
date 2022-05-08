@@ -1,0 +1,32 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .slide{
+      transition: all 1s ease;
+      opacity: 0.6;
+      transform: scale(1.02);
+      
+      &-active{
+          transition: all 1s ease-in-out;
+          opacity: 1;
+          transform: scale(1);
+          border-radius: 20px;
+          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.197);
+    }
+  }
+  
+  img {
+      height: 80vh;
+      width: 1100px;
+      border-radius: 20px;
+      margin: 16px;
+  }
+
+  .arrow {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 16px;
+  }
+}

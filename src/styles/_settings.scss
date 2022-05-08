@@ -45,10 +45,25 @@ body{
 
 h1{
     @include header;
+    text-align: center;
 }
 
 h2{
     @include title-1;
+
+        position: relative;
+        margin: 56px 0;
+        text-align: center;
+  
+        &::after {
+          content: "";
+          height: 8px;
+          position: absolute;
+          bottom: -15px;
+          left: 50%;
+          transform: translate(-50%);
+          border-radius: 5px;
+        }
 }
 
 h3{
@@ -81,4 +96,8 @@ button:hover{
     color : $color-5;
     border: 2px solid #DD1C1A;
     transform: scale(1.1);
+}
+
+section{
+    height: 100vh;
 }

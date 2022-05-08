@@ -1,7 +1,4 @@
 .home {
-
-  height: 100vh;
-
   h1 {
     color: $color-4;
     margin: 0;
@@ -20,40 +17,24 @@
     }
 
     h2 {
-      margin: 16px 0;
+      margin: 0 auto 16px auto;
     }
   }
 
   .welcome {
-
     height: 100vh;
 
-    h2 {
-      position: relative;
-      margin: 72px 0;
-      text-align: center;
-
-      &::after {
-        content: "";
-        width: 12%;
-        height: 8px;
-        background: $color-4;
-        position: absolute;
-        bottom: -15px;
-        left: 50%;
-        transform: translate(-50%);
-        border-radius: 5px;
-      }
+    h2::after {
+      width: 12%;
+      background: $color-4;
     }
-
-    
   }
 
   .introduction {
     display: flex;
     justify-content: space-around;
     position: absolute;
-    
+
     p {
       width: 75%;
       margin: 16px 56px;
@@ -66,6 +47,27 @@
 
     a {
       margin-left: 56px;
+    }
+  }
+
+  .lastProjects {
+    h2::after {
+      width: 29%;
+      background: $color-5;
+    }
+  }
+
+  .contact {
+    height: 100vh;
+
+    h1 {
+      color: $color-3;
+      margin: 16px;
+    }
+
+    h2::after{
+      width: 33%;
+      background: $color-3;
     }
   }
 }
