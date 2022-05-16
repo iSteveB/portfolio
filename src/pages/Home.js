@@ -3,10 +3,10 @@ import DownloadCV from "../components/DownloadCV";
 import Header from "../components/Header";
 import Sphere from "../components/Sphere";
 import Logo from "../components/Logo";
-import Slider from "../components/Slider";
 import ContactForm from "../components/ContactForm";
+import Portfolio from "../components/Portfolio";
 
-import { SliderData } from "../components/SliderData";
+import { projectsList } from "../Data/projectsList";
 
 const Accueil = () => {
   return (
@@ -51,9 +51,9 @@ const Accueil = () => {
         </div>
       </section>
 
-      <section className="lastProjects">
+      <section className="portfolio">
         <h2>Quelques réalisations</h2>
-        <Slider slides={SliderData} />
+        <Portfolio projects={projectsList} />
 
       </section>
 

@@ -1,0 +1,65 @@
+.portfolio {
+    overflow: hidden;
+    height: 100vh;
+
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+    
+    .quadriptyque {
+      display: flex;
+      min-width: 50%;
+      max-width: 90%;
+      height: 70vh;
+      margin: 4rem auto;
+    }
+    
+    .image {
+      cursor: pointer;
+      min-width: 5%;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.197);
+      transition: all .5s ease-in-out;
+      overflow: hidden;
+      position: relative;
+      z-index: 100;
+    }
+    
+    .image.active{
+      flex-grow: 100;
+      max-width: 70%;
+      margin: 10px;
+      
+    }
+    
+    .image:not(.active){
+      flex-grow: 10;
+    }
+    
+    .text-container{
+      width: 100%;
+      height: 100%;
+      padding: 1.5rem;
+      transform: translateY(600px);
+      opacity: 1;
+      transition: all .6s ease;
+      background: linear-gradient(364deg, black 0%, transparent 45%);
+      color: white;
+    }
+    
+    .text{
+      position: absolute;
+      bottom: 5rem;
+    }
+    
+    .active .text-container{
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+  }
+  
