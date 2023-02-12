@@ -4,11 +4,12 @@
     margin: 0;
   }
 
-  .presentation {
+  .intro {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 92px;
 
     img {
       width: 300px;
@@ -22,40 +23,29 @@
   }
 
   .welcome {
-    height: 100vh;
 
     h2::after {
-      width: 12%;
+      width: 170px;
       background: $color-4;
     }
-  }
-
-  .introduction {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-
-    p {
-      width: 75%;
-      margin: 16px 56px;
+    
+    .presentation {
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+  
+      p {
+        width: 80%;
+      }
     }
-
-    img {
-      position: relative;
-      top: 16px;
-    }
-
-    a {
-      margin-left: 56px;
+    
+    .text-presentation{
+      
+      margin: 36px 56px;
     }
   }
 
-  .lastProjects {
-    h2::after {
-      width: 29%;
-      background: $color-5;
-    }
-  }
+
 
   .contact {
     height: 100vh;
@@ -66,7 +56,7 @@
     }
 
     h2::after{
-      width: 33%;
+      width: 470px;
       background: $color-3;
     }
   }

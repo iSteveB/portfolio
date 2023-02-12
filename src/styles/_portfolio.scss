@@ -1,18 +1,20 @@
 .portfolio {
-    overflow: hidden;
-    height: 100vh;
 
     h2 {
       text-align: center;
-      font-size: 3rem;
       margin-bottom: 16px;
+
+      &::after {
+        width: 410px;
+        background: $color-5;
+      }
     }
     
     .quadriptyque {
       display: flex;
       min-width: 50%;
       max-width: 90%;
-      height: 70vh;
+      height: 600px;
       margin: 4rem auto;
     }
     
@@ -25,7 +27,7 @@
       transition: all .5s ease-in-out;
       overflow: hidden;
       position: relative;
-      z-index: 100;
+      
     }
     
     .image.active{
@@ -46,13 +48,14 @@
       transform: translateY(600px);
       opacity: 1;
       transition: all .6s ease;
-      background: linear-gradient(364deg, black 0%, transparent 45%);
+      background: linear-gradient(364deg, black 0%, transparent 80%);
       color: white;
     }
     
     .text{
       position: absolute;
       bottom: 5rem;
+      color: $color-1;
     }
     
     .active .text-container{

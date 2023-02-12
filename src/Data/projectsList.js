@@ -14,7 +14,7 @@ export const projectsList = [
     },
     {
         id : 2,
-        name : "Coming Soon Page",
+        name : "Coming soon page",
         image : comingSoon,
         languages : "JavaScript",
         adress: "https://coming-soon-page-nu.vercel.app/",
@@ -31,7 +31,7 @@ export const projectsList = [
     },
     {
         id : 4,
-        name: "Zozor",
+        name: "Blog de Zozor",
         image: zozor,
         languages: "CSS",
         adress: "https://zozor.vercel.app/",

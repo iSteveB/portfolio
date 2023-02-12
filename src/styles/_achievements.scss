@@ -1,0 +1,54 @@
+@keyframes dot-blue {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1.15);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+}
+
+@keyframes red-flux {
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.achievements {
+  .timeline {
+    .dot-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      width: 100%;
+
+      .dot {
+        
+        position: absolute;
+        overflow: hidden;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        transition: all 2s ease-in-out;
+        animation: dot-blue 0.5s infinite both alternate;
+        background-color: $color-3;
+
+        .red {
+          width: 100px;
+          height: 100px;
+          background-color: $color-5;
+          transform: translateY(82px);
+          transition: all 2s ease-in-out;
+          &:active {
+              animation: red-flux 1s both ;
+            }
+        }
+      }
+    }
+  }
+}

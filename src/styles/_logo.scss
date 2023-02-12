@@ -5,7 +5,7 @@
   align-items: center;
   font-family: "Oleo Script", cursive;
   color: white;
-  margin: 32px;
+  margin-bottom: 16px;
 
   @keyframes circleRed {
     0% {
@@ -25,12 +25,26 @@
     }
   }
 
-  @keyframes circleBlue {
-    0% {
-      transform: scale(0) rotate(360deg);
+  @keyframes blueCircle {
+    0%
+    {
+      transform: scale( 1 );
     }
-    100% {
-      transform: scale(1);
+    25%
+    {
+      transform: scale( .96 );
+    }
+    50%
+    {
+      transform: scale( 1 );
+    }
+    75%
+    {
+      transform: scale( .96 );
+    }
+    100%
+    {
+      transform: scale( 1 );
     }
   }
 
@@ -54,7 +68,7 @@
     background-color: #dd1c1a;
     left: -155px;
     top: -15px;
-    animation: circleRed 2s linear forwards;
+    animation: circleRed 1s linear forwards;
   }
 
   .yellowCircle {
@@ -71,8 +85,8 @@
     align-items: center;
     background-color: #07a0c3;
     z-index: 1;
-    transition: all 0.5s ease-in-out;
-    animation: circleBlue 1s;
+    animation: blueCircle 2s infinite both;
+    cursor: pointer;
   }
 
   p {
@@ -80,5 +94,6 @@
     font-size: 5rem;
     font-weight: 400;
     z-index: 2;
+    cursor: pointer;
   }
 }
