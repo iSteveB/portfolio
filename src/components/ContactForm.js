@@ -3,7 +3,7 @@ import SocialNetwork from './SocialNetwork';
 
 const handleSubmit = (e)=>{
     e.preventDefault()
-    alert("Message envoyé !")
+    alert("Message envoyé ! À très vite ! 😊")
 }
 
 const ContactForm = () => {
@@ -13,7 +13,7 @@ const ContactForm = () => {
                 <input type="text" name='last-name' placeholder='Nom' required />
                 <input type="text" name='first-name' placeholder='Prénom'required />
                 <input type="email" name='email' placeholder='E-mail' required />
-                <textarea rows="9" cols="70" wrap maxlength="500" minlength="10" required placeholder='Get Ready For the NEXT BATTLE !'></textarea>
+                <textarea rows="9" cols="70" maxLength="500" minLength="10" required placeholder='Get Ready For the NEXT BATTLE !'></textarea>
 
                 <button type="submit">Envoyer</button>
             </form>

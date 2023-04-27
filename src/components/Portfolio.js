@@ -31,7 +31,7 @@ const Portfolio = ({ projects }) => {
 
                   <h3>{project.name}</h3>
                   <p>{project.text}</p>
-                  <i>{project.languages}</i>
+                  <i><img src={project.languages} alt="language"/></i>
                   <a href={project.adress} target="_blank" rel="noreferrer">Allez sur le site</a>
 
                 </div>
