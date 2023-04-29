@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import DownloadCV from '../components/DownloadCV';
 import Header from '../components/Header';
 import Sphere from '../components/Sphere';
@@ -11,24 +10,19 @@ import { projectsList } from '../Data/projectsList';
 import Skills from '../components/Skills';
 
 const Accueil = () => {
-    const myRef = useRef(null);
-
     return (
         <div className='home'>
             <Header />
-
             <div className='intro'>
-                <Logo welcomeSection={myRef} />
-                <h1> Steve Basse</h1>
-                <h2>Développeur web React & Node.js</h2>
+                <Logo size="xl"/>
+                <h2>Web Developer React & Node.js</h2>
                 <DownloadCV />
+            <Skills direction="left"/>
             </div>
 
-
-            <Skills direction="left"/>
             <Skills direction="right"/>
 
-            <section ref={myRef} className='welcome'>
+            <section className='welcome'>
                 <h2>Bonjour et bienvenue !</h2>
                 <div className='presentation'>
                     <div className='text-presentation'>

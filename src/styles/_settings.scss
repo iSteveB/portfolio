@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Sansita&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sansita:wght@400;700&family=Sarala:wght@400;700&display=swap');
 
-$font-1:'Oleo Script', sans-serif;
+$font-1:'Righteous', sans-serif;
 $font-2: 'Sansita', sans-serif;
 $font-3: 'Sarala', sans-serif;
 
@@ -36,7 +36,14 @@ $color-5: #DD1C1A;
     color: $color-5;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    width: 85%;
+    margin: 2% auto;
     background-color: $color-1;
     font-family: $font-3;
     font-size: 1.5rem;

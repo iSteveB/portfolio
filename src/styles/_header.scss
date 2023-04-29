@@ -1,16 +1,14 @@
 .header-container{
-    margin: 0 5%;
+
     display: flex;
     
     .header {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
 
-        .social-network {
-            margin-left: auto;
-        }
+       
     }
     
 }
