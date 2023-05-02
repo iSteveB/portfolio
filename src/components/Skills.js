@@ -15,43 +15,53 @@ import redux_toolkit from '../assets/images/icons/redux_toolkit.svg';
 import tailwind from '../assets/images/icons/tailwind.svg';
 import typescript from '../assets/images/icons/typescript.svg';
 
-const Skills = ({direction}) => {
+const Skills = ({ direction }) => {
     return (
         <div className='skills-container'>
-                <div className={direction === "right" ? "skills-move-right" : "skills-move-left"}>
-                    <img src={node} alt='node' />
-                    <img src={sass} alt='sass' />
-                    <img src={nextjs} alt='nextjs' />
-                    <img src={bootstrap} alt='bootstrap' />
-                    <img src={express} alt='express' />
-                    <img src={figma} alt='figma' />
-                    <img src={github} alt='github' />
-                    <img src={javascript} alt='javascript' />
-                    <img src={jquery} alt='jquery' />
-                    <img src={mongodb} alt='mongodb' />
-                    <img src={notion} alt='notion' />
-                    <img src={react} alt='react' />
-                    <img src={redux_toolkit} alt='redux_toolkit' />
-                    <img src={typescript} alt='typescript' />
-                    <img src={tailwind} alt='tailwind' />
-                </div>
-                <div className={direction === "right" ? "skills-move-right" : "skills-move-left"}>
-                    <img src={node} alt='node' />
-                    <img src={sass} alt='sass' />
-                    <img src={nextjs} alt='nextjs' />
-                    <img src={bootstrap} alt='bootstrap' />
-                    <img src={express} alt='express' />
-                    <img src={figma} alt='figma' />
-                    <img src={github} alt='github' />
-                    <img src={javascript} alt='javascript' />
-                    <img src={jquery} alt='jquery' />
-                    <img src={mongodb} alt='mongodb' />
-                    <img src={notion} alt='notion' />
-                    <img src={react} alt='react' />
-                    <img src={redux_toolkit} alt='redux_toolkit' />
-                    <img src={typescript} alt='typescript' />
-                    <img src={tailwind} alt='tailwind' />
-                </div>
+            <div
+                className={
+                    direction === 'right'
+                        ? 'skills-move-right'
+                        : 'skills-move-left'
+                }>
+                <img src={node} alt='node' />
+                <img src={sass} alt='sass' />
+                <img src={nextjs} alt='nextjs' />
+                <img src={bootstrap} alt='bootstrap' />
+                <img src={express} alt='express' />
+                <img src={figma} alt='figma' />
+                <img src={github} alt='github' />
+                <img src={javascript} alt='javascript' />
+                <img src={jquery} alt='jquery' />
+                <img src={mongodb} alt='mongodb' />
+                <img src={notion} alt='notion' />
+                <img src={react} alt='react' />
+                <img src={redux_toolkit} alt='redux_toolkit' />
+                <img src={typescript} alt='typescript' />
+                <img src={tailwind} alt='tailwind' />
+            </div>
+            <div
+                className={
+                    direction === 'right'
+                        ? 'skills-move-right'
+                        : 'skills-move-left'
+                }>
+                <img src={node} alt='node' />
+                <img src={sass} alt='sass' />
+                <img src={nextjs} alt='nextjs' />
+                <img src={bootstrap} alt='bootstrap' />
+                <img src={express} alt='express' />
+                <img src={figma} alt='figma' />
+                <img src={github} alt='github' />
+                <img src={javascript} alt='javascript' />
+                <img src={jquery} alt='jquery' />
+                <img src={mongodb} alt='mongodb' />
+                <img src={notion} alt='notion' />
+                <img src={react} alt='react' />
+                <img src={redux_toolkit} alt='redux_toolkit' />
+                <img src={typescript} alt='typescript' />
+                <img src={tailwind} alt='tailwind' />
+            </div>
         </div>
     );
 };

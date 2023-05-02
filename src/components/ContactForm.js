@@ -1,4 +1,3 @@
-import React from 'react';
 import SocialNetwork from './SocialNetwork';
 
 const handleSubmit = (e)=>{

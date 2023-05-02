@@ -7,62 +7,59 @@ import Portfolio from '../components/Portfolio';
 import Footer from '../components/Footer';
 
 import { projectsList } from '../Data/projectsList';
-import Skills from '../components/Skills';
 
 const Accueil = () => {
     return (
-        <div className='home'>
-            <Header />
-            <div className='intro'>
-                <Logo size="xl"/>
-                <h2>Web Developer React & Node.js</h2>
-                <DownloadCV />
-            <Skills direction="left"/>
-            </div>
-
-            <Skills direction="right"/>
-
-            <section className='welcome'>
-                <h2>Bonjour et bienvenue !</h2>
-                <div className='presentation'>
-                    <div className='text-presentation'>
-                        <p>
-                            Je suis Steve, étudiant chez OpenClassrooms où je
-                            prépare un titre RNCP Bac +2{' '}
-                            <strong>développeur web</strong>.
-                        </p>
-                        <p>
-                            En ce moment, je découvre{' '}
-                            <strong>TypeScript</strong>, <strong>Docker</strong>{' '}
-                            et je continue d'approfondir mes connaissances au
-                            travers de ma veille techno. J’aime le code propre
-                            et efficace et cherche donc à apprendre dans ce
-                            sens.
-                        </p>
-                        <p>
-                            Si vous souhaitez en savoir plus, n'hésitez pas à
-                            jeter un oeil à mes réalisations et à télécharger
-                            mon CV.
-                        </p>
-                        <DownloadCV />
-                    </div>
-
-                    <Sphere />
+           
+            <div className='home'>
+                <Header />
+                <div className='intro'>
+                    <Logo size='xl' />
+                    <h2>Web Developer React & Node.js</h2>
+                    <DownloadCV />
                 </div>
-            </section>
 
-            <section className='portfolio'>
-                <h2>Mes projets récents</h2>
-                <Portfolio projects={projectsList} />
-            </section>
+                <section className='welcome'>
+                    <h2>Bonjour et bienvenue !</h2>
+                    <div className='presentation'>
+                        <div className='text-presentation'>
+                            <p>
+                                Je suis Steve, étudiant chez OpenClassrooms où
+                                je prépare un titre RNCP Bac +2{' '}
+                                <strong>développeur web</strong>.
+                            </p>
+                            <p>
+                                En ce moment, je découvre{' '}
+                                <strong>TypeScript</strong>,{' '}
+                                <strong>Docker</strong> et je continue
+                                d'approfondir mes connaissances au travers de ma
+                                veille techno. J’aime le code propre et efficace
+                                et cherche donc à apprendre dans ce sens.
+                            </p>
+                            <p>
+                                Si vous souhaitez en savoir plus, n'hésitez pas
+                                à jeter un oeil à mes réalisations et à
+                                télécharger mon CV.
+                            </p>
+                            <DownloadCV />
+                        </div>
 
-            <section className='contact'>
-                <h2>Lancer la discussion</h2>
-                <ContactForm />
-            </section>
+                        <Sphere />
+                    </div>
+                </section>
 
-            <Footer />
-        </div>
+                <section className='portfolio'>
+                    <h2>Mes projets récents</h2>
+                    <Portfolio projects={projectsList} />
+                </section>
+
+                <section>
+                    <h2>Lancer la discussion</h2>
+                    <ContactForm />
+                </section>
+
+                <Footer />
+            </div>
     );
 };
 

@@ -10,6 +10,12 @@ $color-3: #07A0C3;
 $color-4: #FF9F1C;
 $color-5: #DD1C1A;
 
+@mixin texture-1{
+background-color: $color-1;
+background-image: radial-gradient(#000000 0.75px, $color-1 0.75px);
+background-size: 15px 15px;
+}
+
 @mixin header {
     font-family: $font-1;
     font-size: 4.5rem;
@@ -42,9 +48,8 @@ $color-5: #DD1C1A;
 }
 
 body{
-    width: 85%;
-    margin: 2% auto;
-    background-color: $color-1;
+    
+    @include texture-1;
     font-family: $font-3;
     font-size: 1.5rem;
     color: $color-2;

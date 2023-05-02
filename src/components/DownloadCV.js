@@ -4,7 +4,7 @@ const DownloadCV = () => {
     return (
        <div className="download-cv">
            <form method="get" action={curriculumVitae} target="_blank">
-            <button type="submit">Get my resume</button>
+            <button type="submit">Get My Resume</button>
            </form>
        </div>
     );

@@ -1,5 +1,11 @@
+
 .home {
     scroll-behavior: smooth;
+    width: 70%;
+    padding: 2% 3%;
+    margin: 2% auto;
+    background: darken($color-1, 2%);
+    border-radius: 20px;
 
     .intro {
         display: flex;
