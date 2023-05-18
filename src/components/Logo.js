@@ -1,6 +1,5 @@
 const Logo = ({ size }) => {
    
-
     return (
         <div className='logo'>
             <p className={`logo-${size === "xl" ? 'xl' : 's'}`}>
