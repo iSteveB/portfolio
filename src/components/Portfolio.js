@@ -26,12 +26,10 @@ const Portfolio = ({ projects }) => {
               onClick={()=>toogleClass(index)}>
 
               <div className="text-container">
-
                 <div className="text">
-
                   <h3>{project.name}</h3>
                   <p>{project.text}</p>
-                  <i><img src={project.languages} alt="language"/></i>
+                  <i>{project.hardSkills}</i> <br />
                   <a href={project.adress} target="_blank" rel="noreferrer">Allez sur le site</a>
 
                 </div>
