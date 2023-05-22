@@ -1,5 +1,4 @@
 import githubIcon from "../assets/images/icons/invertocat.svg"
-import emailIcon from "../assets/images/icons/email.svg"
 import linkedinIcon from "../assets/images/icons/linkedin.svg"
 
 const SocialNetwork = () => {

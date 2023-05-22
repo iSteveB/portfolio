@@ -50,7 +50,7 @@ const Accueil = () => {
                             <h5>Responsive</h5>
                             <p>
                                 Get quality website adapted for each one of your
-                                machine
+                                devices.
                             </p>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ const Accueil = () => {
             </section>
 
             <section className='portfolio'>
-                <h2>Mes projets récents</h2>
+                <h2>Projets</h2>
                 <Portfolio projects={projectsList} />
             </section>
 

@@ -1,45 +1,64 @@
-import React, { useState } from "react";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import externalLink from '../assets/images/icons/external-link.svg';
 
 const Portfolio = ({ projects }) => {
+    const [activeIndex, setActiveIndex] = useState({
+        activeObject: null,
+        objects: projects,
+    });
 
-  const [activeIndex, setActiveIndex] = useState({
-    activeObject : null,
-    objects : projects
-  });
+    const toogleClass = (index) => {
+        setActiveIndex({
+            ...activeIndex,
+            activeObject: activeIndex.objects[index],
+        });
+    };
 
-  const toogleClass = (index)=>{
-    setActiveIndex({...activeIndex, activeObject : activeIndex.objects[index]})
-  }
+    return (
+        <section className='portfolio'>
+            <div className='quadriptyque'>
+                {projects.map((project, index) => {
+                    return (
+                        <div
+                            key={index}
+                            className={
+                                activeIndex.objects[index] ===
+                                activeIndex.activeObject
+                                    ? 'image active'
+                                    : 'image'
+                            }
+                            style={{
+                                background: `url(${project.image}) center/cover`,
+                            }}
+                            onClick={() => toogleClass(index)}>
+                            <div className='text-container'>
+                                <div className='text'>
+                                    <h3>{project.name}</h3>
+                                    <p>{project.text}</p>
 
-  return (
-    <section className="portfolio">
-
-      <div className="quadriptyque">
-        
-        {projects.map((project, index) => {
-
-          return (
-            <div 
-              key= { index } 
-              className= {activeIndex.objects[index] === activeIndex.activeObject ? "image active" : "image"}
-              style={{background: `url(${project.image}) center/cover`}}
-              onClick={()=>toogleClass(index)}>
-
-              <div className="text-container">
-                <div className="text">
-                  <h3>{project.name}</h3>
-                  <p>{project.text}</p>
-                  <i>{project.hardSkills}</i> <br />
-                  <a href={project.adress} target="_blank" rel="noreferrer">Allez sur le site</a>
-
-                </div>
-              </div>
-          </div>
-        ) 
-        })}
-      </div>
-    </section>
-  );
+                                    {project.hardSkills.map((language) => {
+                                        return <span>{language}</span>;
+                                    })}
+                                    <br />
+                                    <a
+                                        href={project.adress}
+                                        target='_blank'
+                                        rel='noreferrer'>
+                                        Allez sur le site{' '}
+                                        <img
+                                            src={externalLink}
+                                            alt='external link'
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
+    );
 };
 
 export default Portfolio;

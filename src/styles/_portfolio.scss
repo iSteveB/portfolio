@@ -4,7 +4,8 @@
         margin-bottom: 16px;
 
         &::after {
-            width: 410px;
+            content:'';
+            width: 4%;
             background: $color-5;
         }
     }
@@ -30,12 +31,12 @@
 
     .image.active {
         flex-grow: 100;
-        max-width: 70%;
+        max-width: 90%;
         margin: 10px;
     }
 
     .image:not(.active) {
-        flex-grow: 10;
+        flex-grow: 1;
     }
 
     .text-container {
@@ -44,20 +45,34 @@
         padding: 1.5rem;
         transform: translateY(600px);
         opacity: 1;
-        transition: all 0.6s ease;
-        background: linear-gradient(364deg, black 0%, transparent 80%);
+        transition: all 0.5s ease;
+        background: linear-gradient(360deg, black 0%, transparent 50%);
         color: white;
+        cursor: default;
     }
-
+    
     .text {
         position: absolute;
-        bottom: 5rem;
+        bottom: 4rem;
         color: $color-1;
 
-        img {
-            height: 50px;
-            width: 50px;
+        h3{
+            color: $color-1;
         }
+
+        span {
+            font-size: 1rem;
+            background: $color-2;
+            margin: 8px 8px 8px 0;
+            padding: 0 8px;
+            border-radius: 12px;
+        }
+
+        a, a:visited{
+            color: $color-1;
+            text-align: center;
+        }
+
     }
 
     .active .text-container {

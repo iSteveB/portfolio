@@ -10,17 +10,15 @@
         margin: 24px;
     }
 
-    .nav-active {
-        &::after {
-            content: '';
-            width: 40%;
-            height: 5px;
-            background: $color-3;
-            position: absolute;
-            bottom: 0px;
-            left: 15%;
-            transform: translate(-35%);
-            border-radius: 5px;
-        }
+    .nav-active::after {
+        content: '';
+        width: 40%;
+        height: 5px;
+        background: $color-3;
+        position: absolute;
+        bottom: 0px;
+        left: 15%;
+        transform: translate(-35%);
+        border-radius: 5px;
     }
 }

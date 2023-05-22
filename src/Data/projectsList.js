@@ -1,40 +1,33 @@
-import calc from '../assets/images/projects/calc.jpg';
-import comingSoon from '../assets/images/projects/coming-soon.jpg';
-import travelAgency from '../assets/images/projects/travel-agency.jpg';
-import zozor from '../assets/images/projects/zozor.jpg';
-import mongoDB from '../assets/images/icons/mongodb.svg';
+import loongStory from '../assets/images/projects/loong-story.png';
+import whereInTheWorld from '../assets/images/projects/where-in-the-world.png';
+import yummyNouilles from '../assets/images/projects/yummy-nouilles.png';
+
+
+
 
 export const projectsList = [
     {
         id: 1,
         name: 'Yummy Nouilles',
-        image: calc,
-        hardSkills: 'JavaScript, CSS3, API',
+        image: yummyNouilles,
+        hardSkills: ["Javascript", "CSS3", "API"],
         address: 'https://calculate-eight.vercel.app/',
-        text: 'Site vitrine d\'un restaurant utilisant l\'api Map de Google.'
+        text: 'Site vitrine d\'un restaurant utilisant l\'API Map de Google.'
     },
     {
         id: 2,
         name: 'Where In The World',
-        image: comingSoon,
-        hardSkills: 'React, API, Sass',
+        image: whereInTheWorld,
+        hardSkills: ["Sass", "React", "API"],
         address: 'https://coming-soon-page-nu.vercel.app/',
         text: 'Application présentant les pays du monde.',
     },
     {
         id: 3,
         name: 'Loong Story',
-        image: travelAgency,
-        hardSkills: 'React, Redux, Node.js, MongoDB, Sass',
+        image: loongStory,
+        hardSkills: ["React", "Redux", "Node.js", "MongoDB", "Sass"],
         address: 'https://travel-agency-beta.vercel.app/',
-        text: "Réseau social.",
-    },
-    {
-        id: 4,
-        name: 'Blog de Zozor',
-        image: zozor,
-        hardSkills: 'CSS',
-        address: 'https://zozor.vercel.app/',
-        text: "Découverte d'HTML et de CSS",
+        text: "Réseau social Twitter-like.",
     },
 ];
