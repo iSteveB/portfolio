@@ -26,8 +26,8 @@ const Accueil = () => {
 
             <section className='welcome'>
                 <h2>My Skills</h2>
-                <div className='presentation'>
-                    <div className='text-presentation'>
+                <div className='competences-container'>
+                    <div className='competences'>
                         <div>
                             <img src={seoIcon} alt='seo' />
                             <h5>SEO</h5>

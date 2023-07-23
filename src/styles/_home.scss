@@ -29,13 +29,13 @@
             }
         }
 
-        .presentation {
+        .competences-container {
             display: flex;
             justify-content: space-around;
             margin: 20px;
         }
 
-        .text-presentation {
+        .competences {
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -81,4 +81,6 @@
             background: $color-3;
         }
     }
+
+    
 }
