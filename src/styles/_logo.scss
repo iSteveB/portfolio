@@ -7,6 +7,9 @@
     .logo-xl {
         font-size: 5rem;
     }
+    .logo-l{
+        font-size: 3rem;
+    }
     .logo-s {
         font-size: 2rem;
     }
@@ -22,5 +25,9 @@
         span:nth-child(2) {
             color: $color-3;
         }
+    }
+
+    @media screen and(max-width: 400px) {
+        
     }
 }

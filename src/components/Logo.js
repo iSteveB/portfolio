@@ -2,7 +2,7 @@ const Logo = ({ size }) => {
    
     return (
         <div className='logo'>
-            <p className={`logo-${size === "xl" ? 'xl' : 's'}`}>
+            <p className={`logo-${size}`}>
                 <span>&lt;</span>{' '}
                 Steve{' '}
                 <span>/</span>

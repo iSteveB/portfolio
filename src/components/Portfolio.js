@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import externalLink from '../assets/images/icons/external-link.svg';
 
 const Portfolio = ({ projects }) => {
@@ -42,10 +41,10 @@ const Portfolio = ({ projects }) => {
                                     })}
                                     <br />
                                     <a
-                                        href={project.adress}
+                                        href={project.address}
                                         target='_blank'
                                         rel='noreferrer'>
-                                        Allez sur le site{' '}
+                                        Visiter le site{' '}
                                         <img
                                             src={externalLink}
                                             alt='external link'

@@ -11,7 +11,7 @@ export const projectsList = [
         name: 'Yummy Nouilles',
         image: yummyNouilles,
         hardSkills: ["Javascript", "CSS3", "API"],
-        address: 'https://calculate-eight.vercel.app/',
+        address: 'https://yummynouilles.vercel.app/',
         text: 'Site vitrine d\'un restaurant utilisant l\'API Map de Google.'
     },
     {
@@ -19,7 +19,7 @@ export const projectsList = [
         name: 'Where In The World',
         image: whereInTheWorld,
         hardSkills: ["Sass", "React", "API"],
-        address: 'https://coming-soon-page-nu.vercel.app/',
+        address: 'https://world-map-v01.vercel.app/',
         text: 'Application présentant les pays du monde.',
     },
     {
