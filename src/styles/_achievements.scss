@@ -1,36 +1,7 @@
 .achievements {
     @extend .home;
-    
-    .timeline {
-        .dot-container {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 70vh;
-            width: 100%;
-
-            .dot {
-                position: absolute;
-                overflow: hidden;
-                width: 90px;
-                height: 90px;
-                border-radius: 50%;
-                transition: all 2s ease-in-out;
-                animation: dot-blue 0.5s infinite both alternate;
-                background-color: $color-3;
-
-                .red {
-                    width: 100px;
-                    height: 100px;
-                    background-color: $color-5;
-                    transform: translateY(82px);
-                    transition: all 2s ease-in-out;
-                    &:active {
-                        animation: red-flux 1s both;
-                    }
-                }
-            }
-        }
+    height: 200vh;
+    .build {
+       
     }
 }

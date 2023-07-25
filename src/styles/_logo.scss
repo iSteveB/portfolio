@@ -3,16 +3,18 @@
     justify-content: center;
     align-items: center;
     font-family: $font-1;
+    transition: all .5s ease-in-out;
 
-    .logo-xl {
+    &-xl {
         font-size: 5rem;
     }
-    .logo-l{
+    &-l{
         font-size: 3rem;
     }
-    .logo-s {
+    &-s {
         font-size: 2rem;
     }
+    
     p {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         cursor: pointer;
@@ -22,12 +24,9 @@
             color: $color-5;
         }
 
-        span:nth-child(2) {
+        span:nth-child(3) {
             color: $color-3;
         }
     }
-
-    @media screen and(max-width: 400px) {
-        
-    }
+    
 }

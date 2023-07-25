@@ -1,17 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
+import buildingProgress from '../assets/images/icons/building-progress.svg'
 
 const Achievements = () => {
     return (
         <div className='achievements'>
             <Header />
-            <div className="timeline">
-                <div className="dot-container">
-                    <button className="dot">
-                        <div className="red"></div>
-                    </button>
-                </div>
-            </div>
+            <h1>Working Progress...</h1>
+            <img className="build" src={buildingProgress} alt="building progress" />
         </div>
     );
 };

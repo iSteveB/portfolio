@@ -2,11 +2,60 @@
     display: flex;
     height: 15vh;
     padding: 0 5%;
-    
+    overflow: hidden;
+
     .header {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .burger-menu, .burger-menu::before, .burger-menu::after {
+            display: block;
+            position: relative;
+            width: 40px;
+            height: 5px;
+            background: black;
+            border-radius: 5px;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+            }
+
+            &::before {
+                transform: translateY(-12px);
+            }
+            &::after {
+                
+            }
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .header {
+            height: 10vh;
+            justify-content: flex-end;
+
+            > a {
+                margin-right: auto
+            }
+        }
+        
+        .logo {
+            span:nth-child(2) {
+                position: absolute;
+            transform: translateY(-200px);
+            opacity: 0;
+            }
+        }
+
+        .navigation {
+            position: absolute;
+            transform: translateY(-200px);
+            opacity: 0;
+           
+        }
     }
 }

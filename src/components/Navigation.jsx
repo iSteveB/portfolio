@@ -1,10 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import SocialNetwork from './SocialNetwork';
 
 const Navigation = () => {
     return (
-        <nav className='nav-container'>
-            <div className='nav'>
+        <nav className='navigation'>
                 <ul>
                     <li>
                         <NavLink
@@ -38,9 +36,6 @@ const Navigation = () => {
                     </li>
                 </ul>
                 <div className='burger_menu'></div>
-            </div>
-            
-            <SocialNetwork />
         </nav>
     );
 };
