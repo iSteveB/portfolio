@@ -59,12 +59,12 @@ const Accueil = () => {
             </section>
 
             <section className='portfolio'>
-                <h2>Projets</h2>
+                <h2>Last Projects</h2>
                 <Portfolio projects={projectsList} />
             </section>
 
             <section>
-                <h2>Lancer la discussion</h2>
+                <h2>Let's Talk</h2>
                 <ContactForm />
             </section>
 

@@ -27,7 +27,7 @@ export const projectsList = [
         name: 'Loong Story',
         image: loongStory,
         hardSkills: ["React", "Redux", "Node.js", "MongoDB", "Sass"],
-        address: 'https://travel-agency-beta.vercel.app/',
+        address: '',
         text: "Réseau social Twitter-like.",
     },
 ];
