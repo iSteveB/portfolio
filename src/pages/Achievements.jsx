@@ -1,13 +1,19 @@
 import React from 'react';
 import Header from '../components/Header';
-import buildingProgress from '../assets/images/icons/building-progress.svg'
+import buildingProgress from '../assets/images/icons/building-progress.png';
 
 const Achievements = () => {
     return (
         <div className='achievements'>
             <Header />
-            <h1>Working Progress...</h1>
-            <img className="build" src={buildingProgress} alt="building progress" />
+            <div className='container'>
+                <div className='title-container'>
+                    <h1>Working Progress...</h1>
+                </div>
+                <div className='img-container'>
+                    <img src={buildingProgress} alt='building progress' />
+                </div>
+            </div>
         </div>
     );
 };

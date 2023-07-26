@@ -13,6 +13,7 @@ const ContactForm = () => {
         emailjs.sendForm('service_5wk0o1s', 'template_5agglvh', form.current, 'WcTjx_hDSVUI77y2w')
         .then((result) => {
             console.log(result.text);
+            alert('Soon, I\'ll read your message! Thank You! 😊')
         }, (error) => {
             console.log(error.text);
         });
