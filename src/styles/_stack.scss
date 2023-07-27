@@ -1,4 +1,4 @@
-.skills-container {
+.stack-container {
     vertical-align: middle;
     display: flex;
     width: 100%;
@@ -6,16 +6,16 @@
     margin: 0;
     padding: 0;
 
-    .skills-move-left,
-    .skills-move-right {
+    .stack-move-left,
+    .stack-move-right {
         display: flex;
         white-space: nowrap;
     }
 
-    .skills-move-left {
+    .stack-move-left {
         animation: scrollLeft 35s linear infinite;
     }
-    .skills-move-right {
+    .stack-move-right {
         animation: scrollRight 30s linear infinite;
     }
 

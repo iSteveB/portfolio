@@ -4,7 +4,7 @@ import Logo from '../components/Logo';
 import ContactForm from '../components/ContactForm';
 import Portfolio from '../components/Portfolio';
 import Footer from '../components/Footer';
-import Skills from '../components/Skills';
+import Stack from '../components/Stack';
 
 import { projectsList } from '../Data/projectsList';
 
@@ -24,7 +24,7 @@ const Accueil = () => {
                 </div>
             </div>
 
-            <section className='welcome'>
+            <section className='skills'>
                 <h2>My Skills</h2>
                 <div className='competences-container'>
                     <div className='competences'>
@@ -40,8 +40,8 @@ const Accueil = () => {
                             <img src={cleanCodeIcon} alt='clean code' />
                             <h5>Clean Code</h5>
                             <p>
-                                Writing clean code easily readable,
-                                maintainable, and adheres to industry best
+                                Writing code easily readable,
+                                maintainable, adheres to best
                                 practices
                             </p>
                         </div>
@@ -49,13 +49,13 @@ const Accueil = () => {
                             <img src={responsiveIcon} alt='Responsive' />
                             <h5>Responsive</h5>
                             <p>
-                                Get quality website adapted for each one of your
+                                Get quality website adapted to each one of your
                                 devices.
                             </p>
                         </div>
                     </div>
                 </div>
-                <Skills direction='left' />
+                <Stack direction='left' />
             </section>
 
             <section className='portfolio'>
