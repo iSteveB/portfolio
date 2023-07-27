@@ -1,21 +1,32 @@
-import React from 'react';
+import { useState } from 'react';
 import Navigation from './Navigation';
 import SocialNetwork from './SocialNetwork';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
+import burgerButton from '../assets/images/icons/burger-menu.svg';
+import closeButton from '../assets/images/icons/close.svg';
 
 const Header = () => {
+    const [showMenu, setshowMenu] = useState(false);
+
+    const handleShowMenu = () => {
+        setshowMenu(!showMenu);
+    };
+
     return (
         <div className='header-container'>
             <div className='header'>
                 <Link to='/'>
                     <Logo size='s' />
                 </Link>
-                <Navigation />
+                <Navigation showMenu={showMenu}/>
                 <SocialNetwork />
-                <div className='navbar-burger'>
-                    <span className='burger-menu'></span>
-                </div>
+                <img
+                    className='burger-menu'
+                    onClick={handleShowMenu}
+                    src={showMenu ? closeButton : burgerButton}
+                    alt='Menu'
+                />
             </div>
         </div>
     );

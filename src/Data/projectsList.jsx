@@ -12,7 +12,7 @@ export const projectsList = [
         image: yummyNouilles,
         hardSkills: ["Javascript", "CSS3", "API"],
         address: 'https://yummynouilles.vercel.app/',
-        text: 'Site vitrine d\'un restaurant utilisant l\'API Map de Google.'
+        text: 'Restaurant\'s website using Google Map API.'
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export const projectsList = [
         image: whereInTheWorld,
         hardSkills: ["Sass", "React", "API"],
         address: 'https://world-map-v01.vercel.app/',
-        text: 'Application présentant les pays du monde.',
+        text: 'Web app presenting country in the world.',
     },
     {
         id: 3,
@@ -28,6 +28,6 @@ export const projectsList = [
         image: loongStory,
         hardSkills: ["React", "Redux", "Node.js", "MongoDB", "Sass"],
         address: '',
-        text: "Réseau social Twitter-like.",
+        text: "Twitter-like social network.",
     },
 ];

@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
+const Navigation = ({showMenu}) => {
+  
     return (
-        <nav className='navigation'>
+        <nav className={`navigation ${showMenu ? 'show-nav' : ''}`}>
                 <ul>
                     <li>
                         <NavLink
@@ -35,7 +36,6 @@ const Navigation = () => {
                         </NavLink>
                     </li>
                 </ul>
-                <div className='burger_menu'></div>
         </nav>
     );
 };

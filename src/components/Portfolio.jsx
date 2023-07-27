@@ -44,7 +44,7 @@ const Portfolio = ({ projects }) => {
                                         href={project.address}
                                         target='_blank'
                                         rel='noreferrer'>
-                                        Visiter le site{' '}
+                                        Have a look{' '}
                                         <img
                                             src={externalLink}
                                             alt='external link'
