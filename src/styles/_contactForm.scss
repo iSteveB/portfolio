@@ -3,15 +3,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-     ;
     
     input, textarea{
         padding: 16px 8px;
         border-radius: 8px;
         border: 1px solid $color-3;
         font-family: $font-3;
-        
-
+    
         &::placeholder{
             color: $color-2
         }
@@ -51,6 +49,7 @@
     }
 
     button{
+        grid-area: e;
         grid-column: 2/4;
     }
 
@@ -58,4 +57,16 @@
         margin: 16px;
     }
     
+    @media screen and (max-width: 800px) {
+        form{
+            width: 80%;
+            grid-template-areas: 
+            "a a a a"
+            "b b b b"
+            "c c c c"
+            "d d d d"
+            "d d d d"
+            "e e e e";
+        }
+    }
 }
