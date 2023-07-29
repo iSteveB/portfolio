@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import externalLink from '../assets/images/icons/external-link.svg';
-import { projectsList } from '../datas/projectsList';
+import { projectsList } from '../data/projectsList';
 
 const Portfolio = () => {
     const lastProjects = projectsList.slice(0, 3);
