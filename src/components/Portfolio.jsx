@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import externalLink from '../assets/images/icons/external-link.svg';
+import { projectsList } from '../data/projectsList';
 
-const Portfolio = ({ projects }) => {
+const Portfolio = () => {
+    const lastProjects = projectsList.slice(0, 3);
+
     const [activeIndex, setActiveIndex] = useState({
         activeObject: null,
-        objects: projects,
+        objects: lastProjects,
     });
 
     const toogleClass = (index) => {
@@ -17,7 +20,7 @@ const Portfolio = ({ projects }) => {
     return (
         <section className='portfolio'>
             <div className='quadriptyque'>
-                {projects.map((project, index) => {
+                {lastProjects.map((project, index) => {
                     return (
                         <div
                             key={index}
@@ -35,11 +38,11 @@ const Portfolio = ({ projects }) => {
                                 <div className='text'>
                                     <h3>{project.name}</h3>
                                     <p>{project.text}</p>
-
-                                    {project.hardSkills.map((language) => {
-                                        return <span>{language}</span>;
-                                    })}
-                                    <br />
+                                    <div className='tags'>
+                                        {project.hardSkills.map((tag) => {
+                                            return <span>{tag}</span>;
+                                        })}
+                                    </div>
                                     <a
                                         href={project.address}
                                         target='_blank'

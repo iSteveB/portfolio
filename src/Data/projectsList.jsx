@@ -1,6 +1,6 @@
-import loongStory from '../assets/images/projects/loong-story.png';
-import whereInTheWorld from '../assets/images/projects/where-in-the-world.png';
-import yummyNouilles from '../assets/images/projects/yummy-nouilles.png';
+import loongStory from '../assets/images/projects/loong-story.jpg';
+import whereInTheWorld from '../assets/images/projects/where-in-the-world.jpg';
+import yummyNouilles from '../assets/images/projects/yummy-nouilles.jpg';
 
 
 

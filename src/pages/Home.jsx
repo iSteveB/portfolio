@@ -6,8 +6,6 @@ import Portfolio from '../components/Portfolio';
 import Footer from '../components/Footer';
 import Stack from '../components/Stack';
 
-import { projectsList } from '../Data/projectsList';
-
 import cleanCodeIcon from '../assets/images/icons/clean_code.png';
 import responsiveIcon from '../assets/images/icons/responsive.png';
 import seoIcon from '../assets/images/icons/seo.png';
@@ -60,7 +58,7 @@ const Accueil = () => {
 
             <section className='portfolio'>
                 <h2>Last Projects</h2>
-                <Portfolio projects={projectsList} />
+                <Portfolio />
             </section>
 
             <section>
