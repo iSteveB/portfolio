@@ -45,4 +45,13 @@
             transform: translate(0, 0);
         }
     }
+
+    @media screen and (max-width: 580px){
+        .stack-move-left {
+            animation: scrollLeft 20s linear infinite;
+        }
+        .stack-move-right {
+            animation: scrollRight 20s linear infinite;
+        }
+    }
 }
