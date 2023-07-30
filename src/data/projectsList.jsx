@@ -27,7 +27,7 @@ export const projectsList = [
         name: 'Loong Story',
         image: loongStory,
         hardSkills: ["React", "Redux", "Node.js", "MongoDB", "Sass"],
-        address: '',
+        address: 'https://loongstory.onrender.com/home',
         text: "Twitter-like social network.",
     },
 ];
