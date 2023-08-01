@@ -16,10 +16,13 @@ const Header = () => {
     return (
         <div className='header-container'>
             <div className='header'>
+                
                 <Link to='/'>
                     <Logo size='s' />
                 </Link>
+
                 <Navigation showMenu={showMenu}/>
+
                 <SocialNetwork />
                 <img
                     className='burger-menu'

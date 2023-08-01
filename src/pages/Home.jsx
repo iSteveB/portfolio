@@ -8,7 +8,7 @@ import Stack from '../components/Stack';
 
 import cleanCodeIcon from '../assets/images/icons/clean_code.png';
 import responsiveIcon from '../assets/images/icons/responsive.png';
-import seoIcon from '../assets/images/icons/seo.png';
+import speedIcon from '../assets/images/icons/speed.png';
 
 const Accueil = () => {
     return (
@@ -27,11 +27,10 @@ const Accueil = () => {
                 <div className='competences-container'>
                     <div className='competences'>
                         <div>
-                            <img src={seoIcon} alt='seo' />
-                            <h5>SEO</h5>
+                            <img src={speedIcon} alt='seo' />
+                            <h5>Performance</h5>
                             <p>
-                                Optimizing website content, improving search
-                                engine rankings
+                                Optimizing website content, to increase page speed and better user experience
                             </p>
                         </div>
                         <div>
@@ -61,7 +60,7 @@ const Accueil = () => {
                 <Portfolio />
             </section>
 
-            <section>
+            <section className='contact'>
                 <h2>Let's Talk</h2>
                 <ContactForm />
             </section>
