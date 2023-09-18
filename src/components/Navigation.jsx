@@ -1,6 +1,9 @@
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Navigation = ({showMenu}) => {
+
+    const { t } = useTranslation('translation');
   
     return (
         <nav className={`navigation ${showMenu ? 'show-nav' : ''}`}>
@@ -12,7 +15,7 @@ const Navigation = ({showMenu}) => {
                             }
                             end
                             to='/'>
-                            Home
+                            {t('homepage.home')}
                         </NavLink>
                     </li>
 

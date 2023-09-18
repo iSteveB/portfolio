@@ -1,0 +1,40 @@
+{
+    "common": {
+        "haveALook": "Have a look",
+        "cv": "Get My Resume"
+    },
+    "homepage": {
+        "home": "Home",
+        "job" : "Web Developer",
+        "skills": {
+            "title": "My Skills",
+            "performance": "Optimizing website content, to increase page speed and better user experience.",
+            "cleanCode": "Writing code easily readable, maintainable, adheres to best practices.",
+            "responsive": "Get quality website adapted to each one of your devices."
+        },
+        "lastProjects": {
+            "title": "Last Project",
+            "project1": {
+                "title": "Yummy Nouille",
+                "description": "Restaurant's website using Google Map API."
+            },
+            "project2": {
+                "title": "Where In The World",
+                "description": "Web app presenting country in the world."
+            },
+            "project3": {
+                "title": "LoongStory",
+                "description": "Twitter-like social network."
+            }
+        }
+    },
+    "contact": {
+        "letsTalk": "Let's Talk",
+        "firstName": "Firstname",
+        "lastName": "Lastname",
+        "email": "Email",
+        "text": "Write your message here...",
+        "send": "Send",
+        "greetings": "Thank you for your message ! 😊"
+    }
+}

@@ -1,16 +1,16 @@
 import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import SocialNetwork from './SocialNetwork';
 import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+    const { t } = useTranslation('translation');
     const form = useRef();
 
     const [firstname, setFirstname] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [textarea, setTextarea] = useState('');
-
-    console.log(lastName, firstname, email, textarea);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,13 +23,12 @@ const ContactForm = () => {
             )
             .then(
                 (result) => {
-                    console.log(result.text);
                     setEmail('');
                     setLastName('');
                     setFirstname('');
                     setEmail('');
                     setTextarea('');
-                    alert("Soon, I'll read your message! Thank You! 😊");
+                    alert(t('contact.greetings'));
                 },
                 (error) => {
                     console.log(error.text);
@@ -43,7 +42,7 @@ const ContactForm = () => {
                 <input
                     type='text'
                     name='lastname'
-                    placeholder='Lastname'
+                    placeholder={t('contact.lastName')}
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                     required
@@ -51,7 +50,7 @@ const ContactForm = () => {
                 <input
                     type='text'
                     name='firstname'
-                    placeholder='Firstname'
+                    placeholder={t('contact.firstName')}
                     value={firstname}
                     onChange={(e) => setFirstname(e.target.value)}
                     required
@@ -59,9 +58,9 @@ const ContactForm = () => {
                 <input
                     type='email'
                     name='email'
+                    placeholder={t('contact.email')}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder='Email'
                     required
                 />
                 <textarea
@@ -73,9 +72,9 @@ const ContactForm = () => {
                     required
                     value={textarea}
                     onChange={(e) => setTextarea(e.target.value)}
-                    placeholder='Write your message here'></textarea>
+                    placeholder={t('contact.text')}></textarea>
 
-                <button type='submit'>Send</button>
+                <button type='submit'>{t('contact.send')}</button>
             </form>
 
             <SocialNetwork />
