@@ -28,6 +28,9 @@
             }
         }
     },
+    "portfolio": {
+        "progress": "Travail en cours..."
+    },
     "contact": {
         "letsTalk": "Contactez-moi",
         "firstName": "Prénom",

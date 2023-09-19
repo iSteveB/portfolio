@@ -22,7 +22,7 @@
         justify-content: center;
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 2fr 100px;
         grid-template-areas: 
         "a a b b"
         "c c c c"
@@ -50,7 +50,9 @@
 
     button{
         grid-area: e;
-        grid-column: 2/4;
+        grid-column: 1/5;
+      
+        margin: 16px auto 8px auto;
     }
 
     .social-network {

@@ -28,6 +28,9 @@
             }
         }
     },
+    "portfolio": {
+        "progress": "Working Progress..."
+    },
     "contact": {
         "letsTalk": "Let's Talk",
         "firstName": "Firstname",

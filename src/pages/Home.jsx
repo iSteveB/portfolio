@@ -12,8 +12,6 @@ import speedIcon from '../assets/images/icons/speed.png';
 
 import { useTranslation } from 'react-i18next';
 
-
-
 const Accueil = () => {
 
     const { t } = useTranslation('translation');
