@@ -1,15 +1,11 @@
 import { useEffect, useState } from 'react';
-import externalLink from '../assets/images/icons/external-link.svg';
-
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
-import loongStory from '../assets/images/projects/loong-story.jpg';
-import whereInTheWorld from '../assets/images/projects/where-in-the-world.jpg';
-import yummyNouilles from '../assets/images/projects/yummy-nouilles.jpg';
-
-
-
-
+import externalLink from '../assets/images/icons/external-link.svg';
+import loongStory from '../assets/images/projects/loong-story.png';
+import whereInTheWorld from '../assets/images/projects/where-in-the-world.png';
+import yummyNouilles from '../assets/images/projects/yummy-nouilles.png';
 
 const Portfolio = () => {
     const { t } = useTranslation('translation');
@@ -19,7 +15,7 @@ const Portfolio = () => {
             id: 1,
             name: 'Yummy Nouilles',
             image: yummyNouilles,
-            hardSkills: ["Javascript", "CSS3", "API"],
+            hardSkills: ['Javascript', 'CSS3', 'API'],
             address: 'https://yummynouilles.vercel.app/',
             text: t('homepage.lastProjects.project1.description'),
         },
@@ -27,7 +23,7 @@ const Portfolio = () => {
             id: 2,
             name: 'Where In The World',
             image: whereInTheWorld,
-            hardSkills: ["Sass", "React", "API"],
+            hardSkills: ['Sass', 'React', 'API'],
             address: 'https://world-map-v01.vercel.app/',
             text: t('homepage.lastProjects.project2.description'),
         },
@@ -35,7 +31,7 @@ const Portfolio = () => {
             id: 3,
             name: 'Loong Story',
             image: loongStory,
-            hardSkills: ["React", "Redux", "Node.js", "MongoDB", "Sass"],
+            hardSkills: ['React', 'Redux', 'Node.js', 'MongoDB', 'Sass'],
             address: 'https://loongstory.onrender.com',
             text: t('homepage.lastProjects.project3.description'),
         },
@@ -54,14 +50,15 @@ const Portfolio = () => {
             activeObject: activeIndex.objects[index],
         });
     };
-    
-    useEffect(()=>{
 
-    } ,[activeIndex])
+    useEffect(() => {}, [activeIndex]);
 
     return (
-        <section className='portfolio'>
-            <div className='quadriptyque'>
+        <>
+            <motion.div className='quadriptyque'
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.35 }}>
                 {lastProjects.map((project, index) => {
                     return (
                         <div
@@ -75,8 +72,7 @@ const Portfolio = () => {
                             style={{
                                 background: `url(${project.image}) center/cover`,
                             }}
-                            onClick={() => toogleClass(index)}
-                        >
+                            onClick={() => toogleClass(index)}>
                             <div className='text-container'>
                                 <div className='text'>
                                     <h3>{project.name}</h3>
@@ -101,8 +97,8 @@ const Portfolio = () => {
                         </div>
                     );
                 })}
-            </div>
-        </section>
+            </motion.div>
+        </>
     );
 };
 

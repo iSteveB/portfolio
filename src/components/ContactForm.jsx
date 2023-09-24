@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+
 import SocialNetwork from './SocialNetwork';
 import emailjs from '@emailjs/browser';
 
@@ -37,7 +39,11 @@ const ContactForm = () => {
     };
 
     return (
-        <div className='contact-form'>
+        <motion.div
+            className='contact-form'
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.35 }}>
             <form ref={form} onSubmit={handleSubmit}>
                 <input
                     type='text'
@@ -78,7 +84,7 @@ const ContactForm = () => {
             </form>
 
             <SocialNetwork />
-        </div>
+        </motion.div>
     );
 };
 

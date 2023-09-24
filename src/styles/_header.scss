@@ -13,6 +13,15 @@
         background: darken($color-1, 2%);
         height: 10vh;
         transition: all .2s ease-in-out;
+        animation: headerDown normal 0.5s;
+        
+        @keyframes headerDown {
+            0% {
+                transform: translateY(-100px);
+            } 100% {
+                transform: translateY(0);
+            }
+        }
     }
    
     .header {

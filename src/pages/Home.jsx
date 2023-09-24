@@ -40,8 +40,11 @@ const Accueil = () => {
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{opacity: 1, y: 0}}
                 transition={{duration: 1, delay:0.5}}>
+
                 <h2>{t('homepage.skills.title')}</h2>
+
                 <div className='competences-container'>
+                    
                     <div className='competences'>
                         <motion.div
                         initial={{ opacity: 0, transform: {translateY: 100} }}
@@ -77,7 +80,10 @@ const Accueil = () => {
                 <Portfolio />
             </section>
 
-            <section className='contact'>
+            <section className='contact'
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.7, delay: 0.35 }}>
                 <h2>{t('contact.letsTalk')}</h2>
                 <ContactForm />
             </section>
