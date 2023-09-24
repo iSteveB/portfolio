@@ -1,14 +1,15 @@
 .navigation {
     @include body-highlight(1.5rem);
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-left: auto;
     transition: all 0.5s ease-in-out;
 
     a {
         position: relative;
         margin: 24px;
+
+        &:hover {
+            color: $color-3;
+        }
     }
 
     ul {
@@ -35,7 +36,7 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .navigation {
         position: fixed;
         background: $color-1;
@@ -60,10 +61,6 @@
             a {
                 font-size: 5vw;
                 color: $color-2;
-                
-                &:hover {
-                    color: $color-3;
-                }
             }
         }
         .nav-active::after {

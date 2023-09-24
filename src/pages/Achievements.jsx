@@ -2,11 +2,14 @@ import React from 'react';
 import Header from '../components/Header';
 import buildingProgress from '../assets/images/icons/building-progress.png';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion'
 
 const Achievements = () => {
-    const { t } = useTranslation('translation')
+    const { t } = useTranslation('translation');
     return (
-        <div className='achievements'>
+        <motion.div
+            className='achievements'
+        >
             <Header />
             <div className='container'>
                 <div className='title-container'>
@@ -16,7 +19,7 @@ const Achievements = () => {
                     <img src={buildingProgress} alt='building progress' />
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

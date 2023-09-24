@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Navigation from './Navigation';
@@ -9,16 +9,25 @@ import closeButton from '../assets/images/icons/close.svg';
 import LanguageSwitcher from './LanguageSwitcher';
 
 const Header = () => {
-
-    
     const [showMenu, setshowMenu] = useState(false);
+    const [small, setSmall] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setSmall(window.scrollY > 40)
+      );
+    }
+  }, []);
 
     const handleShowMenu = () => {
         setshowMenu(!showMenu);
     };
 
     return (
-        <div className='header-container'>
+        <div className={`header-container ${
+            small ? "small" : ""
+          }`}>
             <div className='header'>
                 
                 <Link to='/'>

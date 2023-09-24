@@ -75,14 +75,15 @@ const Portfolio = () => {
                             style={{
                                 background: `url(${project.image}) center/cover`,
                             }}
-                            onClick={() => toogleClass(index)}>
+                            onClick={() => toogleClass(index)}
+                        >
                             <div className='text-container'>
                                 <div className='text'>
                                     <h3>{project.name}</h3>
                                     <p>{project.text}</p>
                                     <div className='tags'>
                                         {project.hardSkills.map((tag) => {
-                                            return <span>{tag}</span>;
+                                            return <span key={tag}>{tag}</span>;
                                         })}
                                     </div>
                                     <a
