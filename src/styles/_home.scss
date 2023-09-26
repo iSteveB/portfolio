@@ -14,8 +14,16 @@
     }
 
     .skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
         h2 {
+            display: inline-flex;
             position: relative;
+            text-align: center;
+
             &::after {
                 content: '';
                 position: absolute;
@@ -23,10 +31,14 @@
                 height: 6px;
                 background: $color-3;
                 bottom: -8px;
-                left: 43%;
+                left: 23%;
                 transform: translate(-46%);
                 border-radius: 5px;
             }
+        }
+
+        .skills, .portfolio {
+
         }
 
         .competences-container {
@@ -42,7 +54,6 @@
             width: 95%;
 
             div {
-                display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;

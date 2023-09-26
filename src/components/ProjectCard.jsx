@@ -1,13 +1,18 @@
+import externalLink from '../assets/images/icons/external-link.svg';
 import loongStory from '../assets/images/projects/loong-story.webp';
 import whereInTheWorld from '../assets/images/projects/where-in-the-world.webp';
 import yummyNouilles from '../assets/images/projects/yummy-nouilles.webp';
-import { useEffect, useState } from 'react';
+import adviceGen from '../assets/images/projects/advice-gen.webp';
+import fourCard from '../assets/images/projects/four-card.webp';
+import orderSummary from '../assets/images/projects/order-summary.webp';
+import travelAgency from '../assets/images/projects/travel-agency.webp';
+import comingSoon from '../assets/images/projects/coming-soon.webp';
+import calc from '../assets/images/projects/calculatrice.webp';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
-import externalLink from '../assets/images/icons/external-link.svg';
-
-const Portfolio = () => {
+const ProjectCard = () => {
     const { t } = useTranslation('translation');
 
     const projectsList = [
@@ -34,7 +39,57 @@ const Portfolio = () => {
             hardSkills: ['React', 'Redux', 'Node.js', 'MongoDB', 'Sass'],
             address: 'https://loongstory.onrender.com',
             text: t('portfolio.project3.description'),
-        }]
+        },
+        {
+            id: 4,
+            name: 'Advice generator',
+            image: adviceGen,
+            hardSkills: ['HTML', 'CSS', 'JavaScript', 'API'],
+            address: 'https://advice-generator-sooty.vercel.app/',
+            text: t('portfolio.project4.description'),
+        },
+        {
+            id: 5,
+            name: 'Four Card Features',
+            image: fourCard,
+            hardSkills: ['HTML', 'CSS'],
+            address:
+                'https://four-card-feature-section-master-iota-woad.vercel.app/',
+            text: t('portfolio.project5.description'),
+        },
+        {
+            id: 6,
+            name: 'Order Summary Component',
+            image: orderSummary,
+            hardSkills: ['HTML', 'CSS'],
+            address: 'https://order-summary-component-puce.vercel.app/',
+            text: t('portfolio.project6.description'),
+        },
+        {
+            id: 7,
+            name: 'Travel Agency.',
+            image: travelAgency,
+            hardSkills: ['HTML', 'CSS'],
+            address: 'https://travel-agency-beta.vercel.app/',
+            text: t('portfolio.project7.description'),
+        },
+        {
+            id: 8,
+            name: 'Coming Soon Page',
+            image: comingSoon,
+            hardSkills: ['HTML', 'CSS', 'JavaScript'],
+            address: 'https://coming-soon-page-nu.vercel.app/',
+            text: t('portfolio.project8.description'),
+        },
+        {
+            id: 9,
+            name: 'Calculatrice',
+            image: calc,
+            hardSkills: ['HTML', 'CSS', 'JavaScript'],
+            address: 'https://calculate-eight.vercel.app/',
+            text: t('portfolio.project9.description'),
+        },
+    ];
 
     const [activeIndex, setActiveIndex] = useState({
         activeObject: null,
@@ -48,12 +103,10 @@ const Portfolio = () => {
         });
     };
 
-    useEffect(() => {}, [activeIndex]);
-
     return (
-        <>
+        <div className='portfolio'>
             <motion.div
-                className='accordion'
+                className='accordion page'
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.7, delay: 0.35 }}>
@@ -96,8 +149,8 @@ const Portfolio = () => {
                     );
                 })}
             </motion.div>
-        </>
+        </div>
     );
 };
 
-export default Portfolio;
+export default ProjectCard;

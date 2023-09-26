@@ -61,10 +61,10 @@ h1 {
 
 h2 {
     @include title-1;
-
     position: relative;
     margin: 56px 1.5rem;
     text-align: center;
+
 
     &::after {
         content: '';

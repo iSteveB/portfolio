@@ -14,12 +14,19 @@
         }
     }
 
-    .quadriptyque {
+    .accordion {
         display: flex;
         min-width: 50%;
         max-width: 90%;
         height: 600px;
         margin: 4rem auto;
+
+        &.page {
+            flex-direction: column;
+            min-height: 70rem;
+            max-height: 5rem;
+            max-width: 85%;
+        }
     }
 
     .image {
@@ -32,14 +39,14 @@
         overflow: hidden;
         position: relative;
     }
-
+    
     .image.active {
         flex-grow: 50;
         max-width: 100%;
     }
-
+    
     .image:not(.active) {
-        flex-grow: 1;
+        flex-grow: 2;
     }
 
     .text-container {
@@ -49,7 +56,7 @@
         transform: translateY(600px);
         opacity: 1;
         transition: all 0.5s ease;
-        background: linear-gradient(360deg, black 0%, transparent 60%);
+        background: linear-gradient(360deg, black 0%, transparent 50%);
         color: $color-1;
         cursor: default;
     }
@@ -105,7 +112,7 @@
     }
 
     @media screen and (max-width: 800px) {
-        .quadriptyque {
+        .accordion {
             flex-direction: column;
         }
 

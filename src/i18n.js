@@ -11,6 +11,7 @@ i18next
     .use(initReactI18next)
     .init({
         debug: false,
+        returnObjects: true,
         fallbackLng: 'en',
         interpolation: {
             escapeValue: false,
